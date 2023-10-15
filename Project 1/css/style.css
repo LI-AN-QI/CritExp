@@ -1,0 +1,805 @@
+body{
+    font-family: 'Roboto Mono', monospace;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 0
+}
+
+/* 弹窗样式 */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    text-align: center;
+}
+
+.popup-content {
+    background-color: white;
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 按钮样式 */
+#startButton {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+@keyframes fadein {
+    0% { opacity:0; }
+    
+    100% { opacity: 1; }
+}
+
+
+.fadein{
+   animation-name:fadein;
+   animation-duration: 6s;
+}
+
+
+
+#bkd{
+    /* display: flex;
+    width: 44%;
+    margin: 1.5% auto; */
+
+
+    /* width: 42%;
+    position: absolute;
+    left: 32%;
+    top: 13%; */
+    width: 65%;
+    position: absolute;
+    left: 22%;
+    top: 10%;
+}
+
+#title{
+    /* font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    left: 37%;
+    color: #000000; */
+    font-size: 48px;
+    font-weight: 200;
+    text-align: center;
+    left: 7%;
+    color: #000000;
+    top: 27%;
+    rotate: initial;
+}
+
+
+.btn{
+    /* font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+    font-size: 13px;
+    background-color: rgb(0 0 0);
+    color: rgb(255 255 255);
+    border-color: white;
+    border-width: 1px;
+    padding: 14px;
+    position: relative;
+    display: flex;
+    margin: 9.5% auto 0 auto; */
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+    font-size: 13px;
+    background-color: rgb(0 0 0);
+    color: rgb(255 255 255);
+    padding: 29px;
+    position: absolute;
+    top: 55%;
+    left: 52.5%;
+    display: flex;
+    border: none;
+}
+
+.btn:hover {
+    background-color:#ffffff;
+    color: black;
+    transition: 0.7s;
+}
+
+
+.continue{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+    font-size: 13px;
+    background-color: rgb(0 0 0);
+    color: rgb(226, 226, 226);
+    border:none;
+    padding: 14px;
+    position: absolute;
+    display: flex;
+}
+#btn2{
+    position: absolute;
+    top: 87%;
+    left: 50%;
+}
+#btn3{
+    position: absolute;
+    top: 174%;
+    left: 50%;
+}
+
+
+.continue:hover{
+    background-color:#ffffff;
+    color: black;
+    transition: 0.7s; 
+}
+
+
+/* ---------------------------------------------- */
+#PAGE2{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* opacity: 1;
+    transition: opacity 1s;  */
+}
+
+#PAGE3,#PAGE4{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* opacity: 1;
+    transition: opacity 1s;  */
+}
+
+h1{
+    position: absolute;
+    font-size: 16px;
+    font-weight: 100;
+    color: #ffffff;
+    top: 2%;
+
+}
+
+
+#bln1{
+    position: absolute;
+    width: 20%;
+    top: 43%;
+    left: 22%;
+    transition: transform 0.7s;
+}
+
+
+#bln2{
+    position: absolute;
+    width: 11%;
+    top: 21%;
+    left: 47%;
+    transition: transform 0.7s;
+}
+
+#bln3{
+    position: absolute;
+    width: 18%;
+    top: 24%;
+    left: 65%;
+    transition: transform 0.7s;
+}
+
+#map{
+    width: 1200px;
+    position: absolute;
+    left: 16.5%;
+    top: 229.3%;
+    opacity: 69%;
+}
+
+.mapbtn{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+    font-size: 13px;
+    background-color: rgb(225 71 71);
+    color: rgb(255 255 255);
+    border:none;
+    padding: 9px;
+}
+
+.mapbtn:hover{
+    background-color:#ffffff;
+    color: black;
+    transition: 0.7s; 
+}
+
+.mapbtn2{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+    font-size: 13px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255 255 255);
+    border:none;
+    padding: 9px;
+}
+
+.mapbtn2:hover{
+    background-color:#ffffff;
+    color: black;
+    transition: 0.7s; 
+}
+
+
+#MF{
+    position: absolute;
+    margin-top: 52.3%;
+    margin-left: -43.5%;
+}
+
+#BP{
+    position: absolute;
+    margin-top: 48.6%;
+    margin-left: -25.1%;
+}
+
+#W{
+    position: absolute;
+    margin-top: 57.3%;
+    margin-left: -28.2%;
+}
+
+#SO{
+    position: absolute;
+    margin-top: 42.5%;
+    margin-left: -51.4%;
+}
+
+#GC{
+    position: absolute;
+    margin-top: 42.8%;
+    margin-left: -15.9%;
+}
+
+#SE{
+    position: absolute;
+    margin-top: 55%;
+    margin-left: -54.9%;
+}
+
+
+.longpage{
+    height: 6841px;
+}
+
+
+#musicfest{
+    width: 100%;
+    /* position: absolute;
+    margin-left: -48.5%;
+    margin-top: 8500px; */
+}
+
+#releasebtn{
+    position: absolute;
+    margin-top: 14%;
+    margin-left: 33%;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 200;
+    font-size: 22px;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 8px;
+    z-index: 2;
+    opacity: 1;
+    transition: opacity 4s;
+}
+
+#releasebtn:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(191, 78, 78);
+    transition: 0.7s;
+}
+
+#releasebtn.hidden{
+    opacity:0;
+}
+
+
+
+/* ///////////////////////////////10.11////////////// */
+#musicballoon{
+    position: fixed;
+    width: 11%;
+    left: 66%;
+    top: 17%;
+    transition: opacity 5s;
+}
+
+#musicballoon.hidden{
+    opacity:0;
+}
+
+
+
+/* --------------------------music festival--------------------------- */
+.music_text_class{
+    margin: 22% auto;
+    display: grid;
+text-align: center;
+    grid-gap: 1000px;
+}
+
+.musictext{
+    color: #ffffff;
+    font-weight: 200;
+    font-size: 19px;
+    line-height: 1.9;
+}
+
+.musicheading{
+    color: #ffffff;
+    font-size: 34px;
+    font-weight: 200;
+}
+
+.music_button_class{
+    width: 100%;
+}
+
+
+.decorateimg{
+    position:relative
+}
+
+#km{
+    position: absolute;
+    width: 10%;
+    left: 90%;
+    top: -1620px;
+}
+
+#bigcloud{
+    position: absolute;
+    width: 100%;
+    top: -6397px;
+    z-index: -1;
+}
+
+#clouds{
+    position: absolute;
+    width: 100%;
+    left: -2%;
+    top: -4111px;
+}
+
+#music{
+    position: absolute;
+    left: 24%;
+    width: 14%;
+    top: -587px;
+}
+
+#wind{
+    position: absolute;
+    width: 36%;
+    top: -5204px;
+    left: -2%;
+    z-index: -1;
+    rotate: 3deg;
+}
+#wind2{
+    position: absolute;
+    width: 28%;
+    top: -5281px;
+    left: 73%;
+    z-index: -1;
+}
+
+
+
+#continue_music{
+    position: absolute;
+    top: 508px;
+    left: 47%;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+    font-size: 13px;
+    background:none;
+    color: rgb(184, 184, 184);
+    border:none;
+    padding: 14px;
+    position: absolute;
+    display: flex;
+}
+
+#continue_music:hover{
+    color: rgb(255, 255, 255);
+    transition: 0.7s; 
+}
+
+
+
+/* ---------------------land map--------------- */
+#map_land{
+    position: absolute;
+    width: 54%;
+    top: 7%;
+    left: 29%;
+}
+
+#selectland{
+    position: absolute;
+    left: 37%;
+    font-weight: 200;
+    font-size: 25px;
+    top: 7%;
+}
+
+#THELAND{
+    position: absolute;
+    left: 40.4%;
+    top: 40.8%;
+}
+
+#THEOCEAN{
+    position: absolute;
+    left: 52%;
+    top: 64.5%;
+}
+/* ------------------------------------------------------------------------------ */
+#fact1{
+    position: absolute;
+    color: #ffffff;
+    text-align: inherit;
+    left: 32%;
+    top: 31%;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+
+#oceanissue_continue{
+    position: absolute;
+    top: 73%;
+    left: 50%;
+}
+
+#scrolltocontinue{
+    position: absolute;
+    color: #ffffff;
+    top: 220%;
+    width: 443px;
+    font-size: 15px;
+    left: 37%;
+    font-weight: 100;
+    text-align: center;
+    opacity: 1;
+    transition: opacity 2s;
+}
+
+
+#scrolltocontinue.hidden{
+    opacity: 0;
+}
+
+#oceanimgs{
+    position: absolute;
+    width: 42%;
+    z-index: -1;
+    top: 125%;
+    left: 30%;
+}
+
+
+#risk1{
+    position: absolute;
+    width: 42%;
+    z-index: -1;
+    top: 162%;
+    left: 33%;
+}
+
+#risk1_des{
+    position: absolute;
+    width: 501px;
+    font-size: 12px;
+    left: 46%;
+    top: 147%;
+    color: #000000;
+    background-color: #ffffff;
+    font-weight: 700;
+}
+
+
+/* --------------------- */
+#risk2{
+    position: absolute;
+    width: 28%;
+    z-index: -1;
+    top: 257%;
+    left: 37%;
+    filter: contrast(1.1);
+}
+
+#risk2_des1{
+    position: absolute;
+    width: 384px;
+    font-size: 12px;
+    left: 17%;
+    top: 259%;
+    color: #000000;
+    background-color: #ffffff;
+    font-weight: 700;
+}
+
+#risk2_des2{
+    position: absolute;
+    width: 491px;
+    font-size: 12px;
+    left: 55%;
+    top: 318%;
+    color: #000000;
+    background-color: #ffffff;
+    font-weight: 700;
+}
+
+
+
+#risk3{
+    position: absolute;
+    width: 42%;
+    z-index: -1;
+    top: 366%;
+    left: 30%;
+    filter: contrast(1.1);
+}
+
+#risk3_des{
+    position: absolute;
+    width: 443px;
+    font-size: 12px;
+    left: 55%;
+    top: 409%;
+    color: #000000;
+    background-color: #ffffff;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+#risk4{
+    position: absolute;
+    width: 39%;
+    z-index: -1;
+    top: 581%;
+    left: 30%;
+    filter: contrast(1.3);
+}
+
+#risk5{
+    position: absolute;
+    width: 37%;
+    z-index: -1;
+    top: 746%;
+    left: 33.5%;
+    filter: contrast(1.1);
+}
+
+#risk4_des1{
+    position: absolute;
+    width: 443px;
+    font-size: 22px;
+    left: 37%;
+    top: 486%;
+    color: #c9c9c9;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+
+#risk4_des2{
+    position: absolute;
+    width: 280px;
+    font-size: 12px;
+    left: 55%;
+    top: 637%;
+    color: #000000;
+    background-color: #ffffff;
+    font-weight: 700;
+}
+
+#risk4_des3{
+    position: absolute;
+    width: 448px;
+    font-size: 12px;
+    left: 37%;
+    top: 730%;
+    color: #000000;
+    background-color: #ffffff;
+    font-weight: 700;
+}
+
+#oceanissue_continue4, #oceanissue_continue5, #oceanissue_continue6{
+    position: fixed;
+    top: 8%;
+    left: 8%;
+}
+
+#replay{
+ position: absolute;
+top: 165%;
+left: 47%;   
+}
+
+
+
+#risk6{
+    position: absolute;
+    width: 37%;
+    z-index: -1;
+    top: 26%;
+    left: 33.5%;
+}
+
+#risk7{
+    position: absolute;
+    width: 35%;
+    z-index: -1;
+    top: 112%;
+    left: 33.5%;
+}
+
+#risk6_des{
+    position: absolute;
+    width: 419px;
+    font-size: 12px;
+    left: 37%;
+    top: 27%;
+    color: #000000;
+    background-color: #ffffff;
+    font-weight: 700;
+}
+
+#risk7_des{
+    position: absolute;
+    width: 151px;
+    font-size: 12px;
+    left: 49%;
+    top: 59%;
+    color: #000000;
+    background-color: #ffffff;
+    font-weight: 700;
+}
+
+
+
+#risk7_scroll{
+position: absolute;
+width: 443px;
+font-size: 15px;
+left: 37%;
+top: 85%;
+color: #ffffff;
+font-weight: 100;
+text-align: center;
+opacity: 1;
+transition: opacity 2s;
+}
+
+#risk7_scroll.hidden{
+    opacity: 0;
+}
+
+
+#risk8_scroll{
+position: absolute;
+width: 443px;
+font-size: 15px;
+left: 35%;
+top: 85%;
+color: #ffffff;
+font-weight: 100;
+text-align: center;
+opacity: 1;
+transition: opacity 2s;
+}
+
+#risk8_scroll.hidden{
+    opacity: 0;
+}
+
+#risk7_des2{
+    position: absolute;
+    width: 212px;
+    font-size: 12px;
+    left: 52%;
+    top: 105%;
+    color: #000000;
+    background-color: #ffffff;
+    font-weight: 700;
+}
+
+#riskvedio{
+    width: 50%;
+    position: absolute;
+    left: 29%;
+    top: 304%;
+}
+#vedio_des{
+    position: absolute;
+    font-size: 21px;
+    left: 37%;
+    top: 293%;
+    color: #ffffff;
+    font-weight: 100;
+    text-align: center;
+}
+
+#risk8_des{
+    position: absolute;
+    width: 454px;
+    font-size: 22px;
+    left: 37%;
+    top: 221%;
+    color: #c9c9c9;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+#risk8{
+    width: 21%;
+    position: absolute;
+    left: 39%;
+    opacity: 0.9;
+    top: 21%;
+}
+
+#thinktwice{
+    position: absolute;
+    width: 628px;
+    font-size: 34px;
+    left: 29%;
+    top: 109%;
+    color: #c9c9c9;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+#landissue_back{
+    position: fixed;
+    left: 7%;
+    top: 8%;
+}
+
+
+#continue_final{
+    position: absolute;
+    left:48%;
+    top:86%
+}
