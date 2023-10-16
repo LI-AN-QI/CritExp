@@ -1,6 +1,11 @@
 let bln1 = document.getElementById('bln1');
 let bln2 = document.getElementById('bln2');
 let bln3 = document.getElementById('bln3');
+let bln1_des = document.getElementById('bln1_des');
+let bln2_des = document.getElementById('bln2_des');
+let bln3_des = document.getElementById('bln3_des');
+
+
 let isImageEnlarged = false;
 console.log(window.innerHeight)
 //-------------------------------------------------------------
@@ -14,6 +19,7 @@ bln1.addEventListener('mouseover',function(){
         bln1.style.transform = 'scale(1.2)';
         bln2.style.transform = 'scale(1)';
         bln3.style.transform = 'scale(1)';
+        bln1_des.style.opacity=1;
     }   
 });
 
@@ -22,6 +28,7 @@ bln2.addEventListener('mouseover',function(){
         bln2.style.transform = 'scale(1.2)';
         bln1.style.transform = 'scale(1)';
         bln3.style.transform = 'scale(1)';
+        bln2_des.style.opacity=1;
     }   
 });
 
@@ -30,6 +37,7 @@ bln3.addEventListener('mouseover',function(){
         bln3.style.transform = 'scale(1.2)';
         bln1.style.transform = 'scale(1)';
         bln2.style.transform = 'scale(1)';
+        bln3_des.style.opacity=1;
     }   
 });
 ///////////////////////////
@@ -39,16 +47,19 @@ bln3.addEventListener('mouseover',function(){
 
 
 bln1.addEventListener('mouseout',function(){
+    bln1_des.style.opacity=0;
     if(!isImageEnlarged){
         bln1.style.transform = 'scale(1)';
     }
 });
 bln2.addEventListener('mouseout',function(){
+    bln2_des.style.opacity=0;
     if(!isImageEnlarged){
         bln2.style.transform = 'scale(1)';
     }
 });
 bln3.addEventListener('mouseout',function(){
+    bln3_des.style.opacity=0;
     if(!isImageEnlarged){
         bln3.style.transform = 'scale(1)';
     }
