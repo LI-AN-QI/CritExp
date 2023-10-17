@@ -7,6 +7,14 @@ body{
     margin:0 0
 }
 
+/* #projectname{
+        position: absolute;
+        right: 2%;
+        top: 1%;
+        font-weight: 200;
+        font-size: 14px;
+} */
+
 /* 弹窗样式 */
 .popup {
     display: none;
@@ -123,7 +131,8 @@ body{
     font-family: 'Roboto Mono', monospace;
     font-weight: 300;
     font-size: 13px;
-    background-color: rgb(0 0 0);
+    /* background-color: rgb(0 0 0); */
+    background: none;
     color: rgb(226, 226, 226);
     border:none;
     padding: 14px;
@@ -131,17 +140,46 @@ body{
     display: flex;
 }
 #btn2{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+    font-size: 13px;
+    background-color: rgb(0 0 0);
+    color: rgb(226, 226, 226);
+    border:none;
+    padding: 14px;
+    position: absolute;
+    display: flex;
     position: absolute;
     top: 87%;
     left: 50%;
+    background:none;
 }
 #btn3{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+    font-size: 13px;
+    background-color: rgb(0 0 0);
+    color: rgb(226, 226, 226);
+    border:none;
+    padding: 14px;
+    position: absolute;
+    display: flex;
     position: absolute;
     top: 174%;
     left: 50%;
+    background:none;
 }
 
-
+#btn2:hover{
+    background-color:#ffffff;
+    color: black;
+    transition: 0.7s; 
+}
+#btn3:hover{
+    background-color:#ffffff;
+    color: black;
+    transition: 0.7s; 
+}
 .continue:hover{
     background-color:#ffffff;
     color: black;
@@ -254,9 +292,10 @@ h1{
 
 .mapbtn{
     font-family: 'Roboto Mono', monospace;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 13px;
-    background-color: rgb(225 71 71);
+    /* background-color: rgb(225 71 71); */
+    background: none;
     color: rgb(255 255 255);
     border:none;
     padding: 9px;

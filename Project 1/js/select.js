@@ -125,7 +125,7 @@ btn2.addEventListener('click',function(){
 let btn3 = document.getElementById('btn3');
 btn3.addEventListener('click',function(){
     window.scrollTo({
-            top:1666,
+            top:1600,
             behavior:'smooth'
     })
 })
